@@ -1,0 +1,16 @@
+
+#ifndef INC_RCC_H_
+#define INC_RCC_H_
+
+#include "stm32f407xx.h"
+
+
+
+#define RCC_GPIOA_CLK_ENABLE()					do{  \
+	                                                \
+													\
+													\
+                                                    }while(0);
+
+
+#endif /* INC_RCC_H_ */

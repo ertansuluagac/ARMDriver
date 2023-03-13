@@ -1,0 +1,18 @@
+
+
+
+#include "stm32f407xx.h"
+
+
+
+int main(void)
+{
+
+
+	RCC_TypeDef_t RCC_TF;
+	RCC_TF->AHB1ENR;
+
+	for(;;);
+
+
+}

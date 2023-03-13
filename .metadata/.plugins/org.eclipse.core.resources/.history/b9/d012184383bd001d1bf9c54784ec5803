@@ -1,0 +1,16 @@
+
+
+
+#include "stm32f407xx.h"
+
+
+
+int main(void)
+{
+
+	RCC_AHB1ENR_CLK_ENABLE();
+
+	for(;;);
+
+
+}

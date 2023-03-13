@@ -1,0 +1,520 @@
+09:59:20 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-size   driverDevelopment.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+09:59:25 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+10:00:19 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-size   driverDevelopment.elf 
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+10:08:52 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:4:
+../Src/main.c: In function 'main':
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:150:36: error: expected ')' before '*' token
+  150 | #define RCC        ((RCC_TypeDef_t *  )(RCC_BASE_ADDR)  )
+      |                                    ^
+../Src/main.c:12:16: note: in expansion of macro 'RCC'
+   12 |  RCC_TypeDef_t RCC;
+      |                ^~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:150:40: error: expected ')' before '(' token
+  150 | #define RCC        ((RCC_TypeDef_t *  )(RCC_BASE_ADDR)  )
+      |                                        ^
+../Src/main.c:12:16: note: in expansion of macro 'RCC'
+   12 |  RCC_TypeDef_t RCC;
+      |                ^~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+10:09:22 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:12:16: warning: unused variable 'RCC_TF' [-Wunused-variable]
+   12 |  RCC_TypeDef_t RCC_TF;
+      |                ^~~~~~
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+10:09:44 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:13:8: error: invalid type argument of '->' (have 'RCC_TypeDef_t')
+   13 |  RCC_TF->AHB1ENR;
+      |        ^~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+10:12:19 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+10:17:56 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+10:18:02 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+10:30:41 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'main':
+../Src/main.c:11:2: warning: implicit declaration of function 'RCC_AHB1ENR_CLK_ENABLE'; did you mean 'RCC_GPIOE_CLK_ENABLE'? [-Wimplicit-function-declaration]
+   11 |  RCC_AHB1ENR_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~~~
+      |  RCC_GPIOE_CLK_ENABLE
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+d:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o: in function `main':
+E:/EmbeddedDrivers/driverDevelopment/Debug/../Src/main.c:11: undefined reference to `RCC_AHB1ENR_CLK_ENABLE'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: driverDevelopment.elf] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+10:31:38 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:4:
+../Src/main.c: In function 'main':
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:16:71: error: 'RCC_AHB1ENR_GPIOBEN' undeclared (first use in this function); did you mean 'RCC_AHB1ENR_GPIOAEN'?
+   16 |                                                  SET_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOBEN)               \
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:10:42: note: in definition of macro 'SET_BIT'
+   10 | #define SET_BIT(REG,BIT)    ( (REG) |=  (BIT) )
+      |                                          ^~~
+../Src/main.c:12:2: note: in expansion of macro 'RCC_GPIOB_CLK_ENABLE'
+   12 |  RCC_GPIOB_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:16:71: note: each undeclared identifier is reported only once for each function it appears in
+   16 |                                                  SET_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOBEN)               \
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:10:42: note: in definition of macro 'SET_BIT'
+   10 | #define SET_BIT(REG,BIT)    ( (REG) |=  (BIT) )
+      |                                          ^~~
+../Src/main.c:12:2: note: in expansion of macro 'RCC_GPIOB_CLK_ENABLE'
+   12 |  RCC_GPIOB_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+In file included from E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:175,
+                 from ../Src/main.c:4:
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:17:17: error: expected ';' before 'tempValue'
+   17 |                 tempValue = READ_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOBEN)  \
+      |                 ^~~~~~~~~
+../Src/main.c:12:2: note: in expansion of macro 'RCC_GPIOB_CLK_ENABLE'
+   12 |  RCC_GPIOB_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:15:49: warning: unused variable 'tempValue' [-Wunused-variable]
+   15 | #define RCC_GPIOB_CLK_ENABLE()     do{ uint32_t tempValue = 0;                                 \
+      |                                                 ^~~~~~~~~
+../Src/main.c:12:2: note: in expansion of macro 'RCC_GPIOB_CLK_ENABLE'
+   12 |  RCC_GPIOB_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:24:14: error: expected ';' before 'tempValue'
+   24 |              tempValue = READ_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOCEN)  \
+      |              ^~~~~~~~~
+../Src/main.c:13:2: note: in expansion of macro 'RCC_GPIOC_CLK_ENABLE'
+   13 |  RCC_GPIOC_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:22:62: warning: unused variable 'tempValue' [-Wunused-variable]
+   22 | #define RCC_GPIOC_CLK_ENABLE()                  do{ uint32_t tempValue = 0;                                 \
+      |                                                              ^~~~~~~~~
+../Src/main.c:13:2: note: in expansion of macro 'RCC_GPIOC_CLK_ENABLE'
+   13 |  RCC_GPIOC_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:30:51: error: expected ';' before 'tempValue'
+   30 |                                                   tempValue = READ_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIODEN)  \
+      |                                                   ^~~~~~~~~
+../Src/main.c:14:2: note: in expansion of macro 'RCC_GPIOD_CLK_ENABLE'
+   14 |  RCC_GPIOD_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:28:62: warning: unused variable 'tempValue' [-Wunused-variable]
+   28 | #define RCC_GPIOD_CLK_ENABLE()                  do{ uint32_t tempValue = 0;                                 \
+      |                                                              ^~~~~~~~~
+../Src/main.c:14:2: note: in expansion of macro 'RCC_GPIOD_CLK_ENABLE'
+   14 |  RCC_GPIOD_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:4:
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:170:43: error: 'RCC_AHB1ENR_GPIOEEN_Msk' undeclared (first use in this function)
+  170 | #define RCC_AHB1ENR_GPIOEEN_Msk   (0x1 << RCC_AHB1ENR_GPIOEEN_Msk)                // RCC AHB1 register GPIOEEN Bit Mask
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:10:42: note: in definition of macro 'SET_BIT'
+   10 | #define SET_BIT(REG,BIT)    ( (REG) |=  (BIT) )
+      |                                          ^~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:171:33: note: in expansion of macro 'RCC_AHB1ENR_GPIOEEN_Msk'
+  171 | #define RCC_AHB1ENR_GPIOEEN     RCC_AHB1ENR_GPIOEEN_Msk                         // RCC AHB1 register GPIOEEN Macro
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:35:72: note: in expansion of macro 'RCC_AHB1ENR_GPIOEEN'
+   35 |                                                   SET_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOEEN)               \
+      |                                                                        ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:15:2: note: in expansion of macro 'RCC_GPIOE_CLK_ENABLE'
+   15 |  RCC_GPIOE_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+In file included from E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:175,
+                 from ../Src/main.c:4:
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:36:51: error: expected ';' before 'tempValue'
+   36 |                                                   tempValue = READ_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOEEN)  \
+      |                                                   ^~~~~~~~~
+../Src/main.c:15:2: note: in expansion of macro 'RCC_GPIOE_CLK_ENABLE'
+   15 |  RCC_GPIOE_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:34:63: warning: unused variable 'tempValue' [-Wunused-variable]
+   34 | #define RCC_GPIOE_CLK_ENABLE()                   do{ uint32_t tempValue = 0;                                 \
+      |                                                               ^~~~~~~~~
+../Src/main.c:15:2: note: in expansion of macro 'RCC_GPIOE_CLK_ENABLE'
+   15 |  RCC_GPIOE_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+10:33:32 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:4:
+../Src/main.c: In function 'main':
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:16:71: error: 'RCC_AHB1ENR_GPIOBEN' undeclared (first use in this function); did you mean 'RCC_AHB1ENR_GPIOAEN'?
+   16 |                                                  SET_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOBEN);              \
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:10:42: note: in definition of macro 'SET_BIT'
+   10 | #define SET_BIT(REG,BIT)    ( (REG) |=  (BIT) )
+      |                                          ^~~
+../Src/main.c:12:2: note: in expansion of macro 'RCC_GPIOB_CLK_ENABLE'
+   12 |  RCC_GPIOB_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:16:71: note: each undeclared identifier is reported only once for each function it appears in
+   16 |                                                  SET_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOBEN);              \
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:10:42: note: in definition of macro 'SET_BIT'
+   10 | #define SET_BIT(REG,BIT)    ( (REG) |=  (BIT) )
+      |                                          ^~~
+../Src/main.c:12:2: note: in expansion of macro 'RCC_GPIOB_CLK_ENABLE'
+   12 |  RCC_GPIOB_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:170:43: error: 'RCC_AHB1ENR_GPIOEEN_Msk' undeclared (first use in this function)
+  170 | #define RCC_AHB1ENR_GPIOEEN_Msk   (0x1 << RCC_AHB1ENR_GPIOEEN_Msk)                // RCC AHB1 register GPIOEEN Bit Mask
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:10:42: note: in definition of macro 'SET_BIT'
+   10 | #define SET_BIT(REG,BIT)    ( (REG) |=  (BIT) )
+      |                                          ^~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:171:33: note: in expansion of macro 'RCC_AHB1ENR_GPIOEEN_Msk'
+  171 | #define RCC_AHB1ENR_GPIOEEN     RCC_AHB1ENR_GPIOEEN_Msk                         // RCC AHB1 register GPIOEEN Macro
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:35:72: note: in expansion of macro 'RCC_AHB1ENR_GPIOEEN'
+   35 |                                                   SET_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOEEN);              \
+      |                                                                        ^~~~~~~~~~~~~~~~~~~
+../Src/main.c:15:2: note: in expansion of macro 'RCC_GPIOE_CLK_ENABLE'
+   15 |  RCC_GPIOE_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+10:35:55 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:4:
+../Src/main.c: In function 'main':
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:16:71: error: 'RCC_AHB1ENR_GPIOBEN' undeclared (first use in this function); did you mean 'RCC_AHB1ENR_GPIOAEN'?
+   16 |                                                  SET_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOBEN);              \
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:10:42: note: in definition of macro 'SET_BIT'
+   10 | #define SET_BIT(REG,BIT)    ( (REG) |=  (BIT) )
+      |                                          ^~~
+../Src/main.c:12:2: note: in expansion of macro 'RCC_GPIOB_CLK_ENABLE'
+   12 |  RCC_GPIOB_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:16:71: note: each undeclared identifier is reported only once for each function it appears in
+   16 |                                                  SET_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOBEN);              \
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:10:42: note: in definition of macro 'SET_BIT'
+   10 | #define SET_BIT(REG,BIT)    ( (REG) |=  (BIT) )
+      |                                          ^~~
+../Src/main.c:12:2: note: in expansion of macro 'RCC_GPIOB_CLK_ENABLE'
+   12 |  RCC_GPIOB_CLK_ENABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+10:37:17 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    812	      8	   1568	   2388	    954	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+10:37:56 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-size   driverDevelopment.elf 
+   text	   data	    bss	    dec	    hex	filename
+    812	      8	   1568	   2388	    954	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+10:39:51 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-size   driverDevelopment.elf 
+   text	   data	    bss	    dec	    hex	filename
+    812	      8	   1568	   2388	    954	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+10:45:15 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:12:2: warning: implicit declaration of function 'RCC_GPIOB_CLK_DISABLE'; did you mean 'RCC_GPIOA_CLK_DISABLE'? [-Wimplicit-function-declaration]
+   12 |  RCC_GPIOB_CLK_DISABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~~
+      |  RCC_GPIOA_CLK_DISABLE
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+d:\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o: in function `main':
+E:/EmbeddedDrivers/driverDevelopment/Debug/../Src/main.c:12: undefined reference to `RCC_GPIOB_CLK_DISABLE'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: driverDevelopment.elf] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+10:45:22 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    732	      8	   1568	   2308	    904	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+10:45:25 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-size   driverDevelopment.elf 
+   text	   data	    bss	    dec	    hex	filename
+    732	      8	   1568	   2308	    904	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+10:48:59 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    732	      8	   1568	   2308	    904	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+10:50:24 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    940	      8	   1568	   2516	    9d4	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+10:57:18 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    872	      8	   1568	   2448	    990	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+11:00:34 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    872	      8	   1568	   2448	    990	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+11:00:45 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    872	      8	   1568	   2448	    990	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+11:00:51 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:26: error: unterminated argument list invoking macro "CLEAR_BIT"
+   26 | }
+      | 
+In file included from E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/stm32f407xx.h:175,
+                 from ../Src/main.c:4:
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:45:39: error: 'CLEAR_BIT' undeclared (first use in this function)
+   45 | #define RCC_GPIOE_CLK_DISABLE()       CLEAR_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOEEN
+      |                                       ^~~~~~~~~
+../Src/main.c:21:2: note: in expansion of macro 'RCC_GPIOE_CLK_DISABLE'
+   21 |  RCC_GPIOE_CLK_DISABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~~
+E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc/RCC.h:45:39: note: each undeclared identifier is reported only once for each function it appears in
+   45 | #define RCC_GPIOE_CLK_DISABLE()       CLEAR_BIT(RCC->AHB1ENR,RCC_AHB1ENR_GPIOEEN
+      |                                       ^~~~~~~~~
+../Src/main.c:21:2: note: in expansion of macro 'RCC_GPIOE_CLK_DISABLE'
+   21 |  RCC_GPIOE_CLK_DISABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:26: error: expected ';' at end of input
+   26 | }
+      | 
+../Src/main.c:21:2: error: expected declaration or statement at end of input
+   21 |  RCC_GPIOE_CLK_DISABLE();
+      |  ^~~~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+11:00:54 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    872	      8	   1568	   2448	    990	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+11:02:49 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+11:35:10 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-gcc "../myDrivers/Src/GPIO.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/GPIO.d" -MT"myDrivers/Src/GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/GPIO.o"
+arm-none-eabi-gcc "../myDrivers/Src/RCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"myDrivers/Src/RCC.d" -MT"myDrivers/Src/RCC.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "myDrivers/Src/RCC.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"E:/EmbeddedDrivers/driverDevelopment/myDrivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "driverDevelopment.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\EmbeddedDrivers\driverDevelopment\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverDevelopment.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: driverDevelopment.elf
+ 
+arm-none-eabi-size   driverDevelopment.elf 
+arm-none-eabi-objdump -h -S  driverDevelopment.elf  > "driverDevelopment.list"
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
+Finished building: driverDevelopment.list
+ 
+12:01:33 **** Incremental Build of configuration Debug for project driverDevelopment ****
+make -j20 all 
+arm-none-eabi-size   driverDevelopment.elf 
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	driverDevelopment.elf
+Finished building: default.size.stdout
+ 
